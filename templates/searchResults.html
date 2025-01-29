@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/searchResultsStyle.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <!--header-->
+        <header>
+            <div class="mainMenu">
+                <h3><a href="index.html" target="_blank">SEARCH<span style="color: orange;">IT</span>.COM</a></h3>
+            </div>
+        </header>
+
+        
+        <!--nav-->
+        <nav>
+            <div class="navContainer" style="display:flex;">
+                <div class="navBox" style="display: flex; outline-style:none;">
+                    <div class="navBox">
+                        <div class="navTextBox">
+                            <h3><a href="#">Discover</a></h3>
+                        </div>
+                    </div>
+                    <div class="navBox">
+                        <div class="navTextBox" style="padding-left: 20px;">
+                            <h3><a href="#">Search</a></h3>
+                        </div>
+                    </div>
+                    <div class="navBox">
+                        <div class="navTextBox" style="padding-left: 20px;">
+                            <h3><a href="#">Special</a></h3>
+                        </div>
+                    </div>
+                    <div class="navBox">
+                        <div class="navTextBox" style="padding-left: 20px;">
+                            <h3><a href="#">Popular</a></h3>
+                        </div>
+                    </div>
+                    <div class="navBox">
+                        <div class="navTextBox" style="padding-left: 20px;">
+                            <h3><button onlclick="random()">Random??</button></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <main>
+            <div class="mainContainer" style="display: flex;">
+                <div class="mainColumn" style="display: flex;">
+                    <!-- filters -->
+                    <div class="mainColumn filtersBox">
+                        <h1>Filters</h1>
+                    </div>
+
+
+                    <!-- search results -->
+                    <div class="mainColumn">
+                        <h1>Search Results for "{{ query }}"</h1>
+
+                        {% if results %}
+                            <ul>
+                            {% for result in results %}
+                                <li>
+                                    <img src="{{ url_for('static', filename='images/' + result['picture']) }}" alt="Product Image">      
+                                    <p><strong>Name:</strong> {{ result['name'] }}</p>
+                                    <p><strong>Category:</strong> {{ result['category'] }}</p>
+                                    <p><strong>Brand:</strong> {{ result['brand'] }}</p>
+                                    <p><strong>Dimensions("):</strong> {{ result['dimensions (")'] }}</p>
+                                    <p><strong>Weight(Kg):</strong> {{ result['weight (kg)'] }}</p>
+                                    <p><strong>Promotion:</strong> {{ result['promotion?'] }}</p>
+                                    <p><strong>Price:</strong>£{{result['price']}}</p>
+                                    <p><strong>Review:</strong>{{result['review']}} stars</p>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        {% else %}
+                            <p>No results found.</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--footer-->
+        <footer>
+            <div class="footerContainer" style="display: flex;">
+                <div class="footerColumn" style="display: flex;">
+                    <div class="footerLogoColumn">
+                        <h3><a href="#">SEARCH<span style="color: orange;">IT</span>.COM</a></h3>
+                    </div>
+                    <div class="footerColumn">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerColumn">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="#">Product Sources</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerColumn">
+                        <h3>Account</h3>
+                        <ul> 
+                            <li><a href="#">Log In</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="footerColumn">
+                        <h3>Information</h3>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Help Centre</a></li>
+                        </ul>
+                    </div>
+                    <div>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                ©2025 Searchit.com. All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
