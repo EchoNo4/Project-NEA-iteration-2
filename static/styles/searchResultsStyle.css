@@ -1,0 +1,340 @@
+/* General styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for the page */
+    color: #E0E0E0; /* Light text color */
+}
+
+/* Header */
+header {
+    background-color: #1C1C1C; /* Darker header background */
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+header h1 a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+header h1 a:hover {
+    color: #007AFF; /* Light blue on hover */
+}
+
+/* Navigation */
+nav {
+    background-color: #1C1C1C; /* Dark navbar background */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for navbar */
+    position: relative;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navBox {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-grow: 1; /* Make the nav box take up remaining space */
+}
+
+.navBox a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 4px; /* Rounded corners for links */
+    transition: all 0.3s ease;
+}
+
+.navBox a:hover {
+    background-color: #007AFF; /* Light blue background on hover */
+    color: white; /* Change text color to white on hover */
+    border-radius: 5px; /* Slightly larger rounded corners */
+}
+
+.navBox a.active {
+    color: #007AFF;
+    font-weight: bold;
+}
+
+/* Button in the navbar */
+.navBox button {
+    background-color: #007AFF; /* Light blue background */
+    color: white; /* White text color */
+    border: 2px solid #007AFF; /* Border same as background */
+    padding: 12px 20px; /* Adjusted padding to match the size of links */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px; /* Consistent height with navbar links */
+}
+
+.navBox button:hover {
+    background-color: #005BB5; /* Darker shade of blue on hover */
+    border: 2px solid #005BB5; /* Darker border on hover */
+}
+
+/* Search Bar */
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Make sure input and button are spaced */
+    background-color: #2D2D2D; /* Dark search bar background */
+    border-radius: 5px;
+    padding: 4px 10px; /* Reduced vertical padding to bring the bar closer */
+    margin: 0 15px;
+    border: 1px solid #007AFF;
+    transition: border-color 0.3s ease;
+    height: 40px;
+    width: 350px;
+}
+
+.searchbar input {
+    background-color: #2D2D2D;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 6px; /* Reduced padding to make input field vertically smaller */
+    border-radius: 4px;
+    width: 280px; /* Maintain wider input */
+}
+
+.searchbar input:focus {
+    outline: none;
+    border-color: #007AFF;
+}
+
+.searchbar button {
+    background-color: #007AFF;
+    color: white;
+    padding: 4px 10px; /* Adjusted padding to make button vertically smaller */
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.searchbar button:hover {
+    background-color: #005BB5;
+}
+
+/* Main content */
+main {
+    background-color: #121212; /* Dark background for main area */
+    padding: 30px 0;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px; /* Wider container to cover more of the screen */
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+/* Filters */
+.filtersBox {
+    width: 25%; /* Reduced the width for more balance */
+    background-color: #2D2D2D; /* Darker background for filter box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.filtersBox h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.filterGroup h4 {
+    color: #007AFF; /* Light blue for filter group headers */
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.filterGroup h4:hover {
+    color: #fff;
+}
+
+.filterContent {
+    display: none;
+    padding-left: 20px;
+}
+
+.filterContent label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #888;
+    background-color: #2D2D2D; /* Dark input field */
+    color: #fff;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #007AFF;
+}
+
+button[type="submit"].btn {
+    background-color: #007AFF; /* Light blue button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"].btn:hover {
+    background-color: #005BB5; /* Darker shade of blue on hover */
+}
+
+/* Results */
+.resultsBox {
+    width: 70%; /* Increased width for results */
+    background-color: #2D2D2D; /* Darker background for results box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.resultsBox h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.resultsBox ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resultsBox li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px; /* Consistent padding */
+    border-radius: 5px; /* Rounded corners for list items */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.resultsBox li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.resultsBox li p {
+    margin: 5px 0;
+    color: #E0E0E0; /* Light text for result details */
+}
+
+.resultsBox li strong {
+    color: #007AFF; /* Light blue for strong text */
+}
+
+/* Hover effect */
+.resultsBox li:hover {
+    background-color: #3A4A5A; /* Slightly lighter background on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+    padding: 10px; /* Same padding as normal, no additional space */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1C1C1C; /* Dark background for footer */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footerColumn {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+footer .footerColumn h3 {
+    color: #fff; /* White color for footer column headers */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #007AFF; /* Light blue for links */
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer .footerBottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #aaa;
+}
