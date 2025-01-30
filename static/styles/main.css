@@ -1,0 +1,322 @@
+/* General styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for the page */
+    color: #E0E0E0; /* Light text color */
+}
+
+/*sub-sections*/
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+
+header {
+    background-color: #1C1C1C; /* Darker header background */
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+header h1 a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+header h1 a:hover {
+    color: #007AFF; /* Light blue on hover */
+}
+
+/*nav*/
+nav {
+    background-color: #1C1C1C; /* Dark navbar background */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for navbar */
+    position: relative;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navBox {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    flex-grow: 1; /* Make the nav box take up remaining space */
+}
+
+.navBox a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 4px; /* Rounded corners for links */
+    transition: all 0.3s ease;
+}
+
+.navBox a:hover {
+    background-color: #007AFF; /* Light blue background on hover */
+    color: white; /* Change text color to white on hover */
+    border-radius: 5px; /* Slightly larger rounded corners */
+}
+
+.navBox a.active {
+    color: #007AFF;
+    font-weight: bold;
+}
+
+/* Button in the navbar */
+.navBox button {
+    background-color: #007AFF; /* Light blue background */
+    color: white; /* White text color */
+    border: 2px solid #007AFF; /* Border same as background */
+    padding: 12px 20px; /* Adjusted padding to match the size of links */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px; /* Consistent height with navbar links */
+}
+
+.navBox button:hover {
+    background-color: #005BB5; /* Darker shade of blue on hover */
+    border: 2px solid #005BB5; /* Darker border on hover */
+}
+
+/*main*/
+
+main{
+    background-color: #121212; /* Dark background for main area */  
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mainName{
+    color: #E0E0E0;
+    padding-top: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    font-stretch: condensed;
+}
+
+/* Search Bar */
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Make sure input and button are spaced */
+    background-color: #2D2D2D; /* Dark search bar background */
+    border-radius: 5px;
+    padding: 4px 10px; /* Reduced vertical padding to bring the bar closer */
+    margin: 0 15px;
+    border: 1px solid #007AFF;
+    transition: border-color 0.3s ease;
+    height: 40px;
+    width: 700px;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.searchbar input {
+    background-color: #2D2D2D;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 6px; /* Reduced padding to make input field vertically smaller */
+    border-radius: 4px;
+    width: 625px; /* Maintain wider input */
+}
+
+.searchbar input:focus {
+    outline: none;
+    border-color: #007AFF;
+}
+
+.searchbar button {
+    background-color: #007AFF;
+    color: white;
+    padding: 4px 10px; /* Adjusted padding to make button vertically smaller */
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.searchbar button:hover {
+    background-color: #005BB5;
+}
+
+.entryHeader{
+    color: #E0E0E0;
+    font-size: 30px;
+    word-wrap: break-word;
+    font-weight: bold;
+    text-align: center;
+}
+
+.entrySub{
+    color: #E0E0E0;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+/*section*/
+
+section{
+    color: #E0E0E0;
+    background-color: #2D2D2D;
+    height: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.sponseredProductsBox{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 1500px;
+}
+
+.sponseredProductsContents{
+    display:flex;
+    justify-content: space-around;
+}
+
+.sponseredProductsContents li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sponseredProductsContents li {
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px; /* Consistent padding */
+    border-radius: 5px; /* Rounded corners for list items */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.sponseredProductsContents li p {
+    margin: 5px 0;
+    color: #E0E0E0; /* Light text for result details */
+}
+
+.sponseredProductsContents li strong {
+    color: #007AFF; /* Light blue for strong text */
+}
+
+
+.sponseredProductsContents li:hover{
+    background-color: #3A4A5A; /* Slightly lighter background on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendationTitle{
+    padding-top: 60px;
+    font-size: 15px;
+}
+
+.recommendationButton{
+    padding-top: 5px;
+}
+
+.recommendationButton button {
+    background-color: #007AFF; /* Light blue background */
+    color: white; /* White text color */
+    border: 2px solid #007AFF; /* Border same as background */
+    padding: 12px 20px; /* Adjusted padding to match the size of links */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px; /* Consistent height with navbar links */
+}
+
+.recommendationButton button:hover {
+    background-color: #005BB5; /* Darker shade of blue on hover */
+    border: 2px solid #005BB5; /* Darker border on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1C1C1C; /* Dark background for footer */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footerColumn {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+footer .footerColumn h3 {
+    color: #fff; /* White color for footer column headers */
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #007AFF; /* Light blue for links */
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+footer .footerBottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #aaa;
+}
