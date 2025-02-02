@@ -17,7 +17,7 @@ html, body {
 /*header*/
 
 header {
-    background-color: #1C1C1C; /* Darker header background */
+    background-color: #1C1C1C;
     height: 80px;
     width: 100%;
     display: flex;
@@ -115,6 +115,7 @@ main{
     padding: 10px 0;
 }
 
+/*passage on home page*/
 .mainName{
     color: #E0E0E0;
     padding-top: 20px;
@@ -178,6 +179,7 @@ main{
     text-align: center;
 }
 
+/*'a place where you can find what you are looking for'*/
 .entrySub{
     color: #E0E0E0;
     padding-top: 10px;
@@ -194,6 +196,7 @@ section{
     text-align: center;
 }
 
+/*sponsered products box desgin*/
 .sponseredProductsBox{
     margin-top: 10px;
     text-align: center;
@@ -237,6 +240,7 @@ section{
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*recommendation area and button desgin*/
 .recommendationTitle{
     padding-top: 60px;
     font-size: 15px;
@@ -260,7 +264,7 @@ section{
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 40px; /* Consistent height with navbar links */
+    height: 40px;
 }
 
 .recommendationButton button:hover {
@@ -269,6 +273,8 @@ section{
 }
 
 /* Footer */
+
+/*whole footer*/
 footer {
     background-color: #1C1C1C; /* Dark background for footer */
     color: white;
@@ -284,6 +290,7 @@ footer .footerContainer {
     margin: 0 auto;
 }
 
+/*the columns inside of the footer*/
 footer .footerColumn {
     width: 22%;
     margin-bottom: 20px;
@@ -314,6 +321,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
+/*copyright and company name*/
 footer .footerBottom {
     text-align: center;
     font-size: 14px;
