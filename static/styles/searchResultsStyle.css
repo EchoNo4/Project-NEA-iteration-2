@@ -30,6 +30,7 @@ header h1 a:hover {
 }
 
 /* Navigation */
+/*whole of nav*/
 nav {
     background-color: #1C1C1C; /* Dark navbar background */
     height: 60px;
@@ -48,6 +49,7 @@ nav {
     padding: 0 20px;
 }
 
+/*each box with contents within nav*/
 .navBox {
     display: flex;
     align-items: center;
@@ -55,6 +57,7 @@ nav {
     flex-grow: 1; /* Make the nav box take up remaining space */
 }
 
+/*links within nav*/
 .navBox a {
     color: #E0E0E0;
     text-decoration: none;
@@ -198,10 +201,12 @@ main {
     font-size: 14px;
 }
 
+/*ticking filters*/
 input[type="checkbox"] {
     margin-right: 10px;
 }
 
+/*taking in number for the price range filter*/
 input[type="number"] {
     width: 100px;
     padding: 5px;
@@ -216,6 +221,7 @@ input[type="number"]:focus {
     border-color: #007AFF;
 }
 
+/*put in filters*/
 button[type="submit"].btn {
     background-color: #007AFF; /* Light blue button */
     color: #fff;
@@ -276,7 +282,6 @@ button[type="submit"].btn:hover {
     color: #007AFF; /* Light blue for strong text */
 }
 
-/* Hover effect */
 .resultsBox li:hover {
     background-color: #3A4A5A; /* Slightly lighter background on hover */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
@@ -286,6 +291,7 @@ button[type="submit"].btn:hover {
 
 
 /* Footer */
+/*whole footer*/
 footer {
     background-color: #1C1C1C; /* Dark background for footer */
     color: white;
@@ -301,6 +307,7 @@ footer .footerContainer {
     margin: 0 auto;
 }
 
+/*the columns inside of the footer*/
 footer .footerColumn {
     width: 22%;
     margin-bottom: 20px;
@@ -331,6 +338,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
+/*copyright and company name*/
 footer .footerBottom {
     text-align: center;
     font-size: 14px;
