@@ -37,6 +37,7 @@
             <div class="entrySub">
               A place where you can find what you are looking for.
             </div>
+            <!--Search bar in middle of page-->
             <div class="searchbar">
                 <form action="/search" method="post">
                     <input type="text" name="query" placeholder="Search here..." id="searchInput" />
@@ -45,6 +46,7 @@
                     </button>
                 </form>
             </div>
+            <!--screenshot image of site-->
             <div class="screenshotBox screenshotBoxInside" style="margin-top: 80px; width: 950px;">
               <span><img src="{{ url_for('static', filename='images/screenshot of site.png') }}" alt="Screenshot Of Site Image" style="height: 400px; width: 950px; padding-left: 400px;"></span>
             </div>
@@ -54,6 +56,7 @@
         <section>
             <div style="padding:1px;"></div>
             <div class="sponseredProductsBox", style="display: flex;">
+                <!-- sponsered product1-->
                 <div class="sponseredProductsContents">
                     <li onclick="window.location.href='{{ url_for('product', product_id=item1['id']) }}';">
                         <img src="{{ url_for('static', filename='images/' + item1['picture']) }}" alt="Product Image" style="height: 350px; width: 350px;">
@@ -65,6 +68,7 @@
                         </div>
                     </li>
                 </div>
+                 <!-- sponsered product2-->
                 <div class="sponseredProductsContents">
                     <li onclick="window.location.href='{{ url_for('product', product_id=item2['id']) }}';">
                         <img src="{{ url_for('static', filename='images/' + item2['picture']) }}" alt="Product Image" style="height: 350px; width: 350px;">
@@ -76,6 +80,7 @@
                         </div>
                     </li>
                 </div>
+                 <!-- sponsered product3-->
                 <div class="sponseredProductsContents">
                     <li onclick="window.location.href='{{ url_for('product', product_id=item3['id']) }}';">
                         <img src="{{ url_for('static', filename='images/' + item3['picture']) }}" alt="Product Image" style="height: 350px; width: 350px;">
@@ -87,6 +92,7 @@
                         </div>
                     </li>
                 </div>
+                 <!-- sponsered product4-->
                 <div class="sponseredProductsContents">
                     <li onclick="window.location.href='{{ url_for('product', product_id=item4['id']) }}';">
                         <img src="{{ url_for('static', filename='images/' + item4['picture']) }}" alt="Product Image" style="height: 350px; width: 350px;">
@@ -99,6 +105,7 @@
                     </li>
                 </div>
             </div>
+            <!--recommendation algorithm-->
             <div class="recommendationTitle">Need some help?</div>
             <div class="recommendationButton">
                 <button onclick="recommendation()"> Click this to find what you need</button>
