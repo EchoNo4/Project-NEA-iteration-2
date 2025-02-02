@@ -1,4 +1,4 @@
-#importing applications
+#Importing applications
 from flask import Flask, render_template, request
 import pandas as pd
 
@@ -18,7 +18,7 @@ def get_product_by_id(product_id):
         return product
     return None  # Return None if the product ID is not found
 
-#home page route (when first load site)
+#Home page route (when first load site)
 @app.route('/')
 def home():
     # Convert the first row of the DataFrame into a dictionary
@@ -33,7 +33,7 @@ def home():
                            item3=specific_item3, 
                            item4=specific_item4)
 
-#search results route (when you search something)
+#Search results route (when you search something)
 @app.route('/search', methods=['POST', 'GET'])
 def search():
     # Populate filter options
@@ -98,7 +98,7 @@ def search():
         max_review=max_review
     )
 
-#product route with the product id after (when you click on a product)
+#Product route with the product id after (when you click on a product)
 @app.route('/product/<int:product_id>')
 def product(product_id):
     # Fetch product details by ID
