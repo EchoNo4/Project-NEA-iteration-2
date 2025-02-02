@@ -171,6 +171,7 @@ main{
     background-color: #005BB5;
 }
 
+/*main words in front of page*/
 .entryHeader{
     color: #E0E0E0;
     font-size: 30px;
@@ -179,7 +180,6 @@ main{
     text-align: center;
 }
 
-/*'a place where you can find what you are looking for'*/
 .entrySub{
     color: #E0E0E0;
     padding-top: 10px;
