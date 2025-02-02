@@ -19,12 +19,14 @@
         <!-- Navigation -->
         <nav>
             <div class="navContainer">
+                <!--nav buttons-->
                 <div class="navBox">
                     <a href="{{ url_for('search') }}">Search</a>
                     <a href="#">Discover</a>
                     <a href="#">Special</a>
                     <a href="#">Popular</a>
                 </div>
+                <!--nav search bar-->
                 <div class="searchbar">
                     <form action="/search" method="post">
                         <input type="text" name="query" placeholder="Search here..." id="searchInput" />
