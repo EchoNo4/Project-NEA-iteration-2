@@ -59,6 +59,7 @@
         <!-- Navigation -->
         <nav>
             <div class="navContainer">
+                <!--nav links and buttons-->
                 <div class="navBox">
                     <a href="{{ url_for('search') }}">Search</a>
                     <a href="#">Discover</a>
@@ -66,6 +67,7 @@
                     <a href="#">Popular</a>
                     <button onclick="random()">Random??</button>
                 </div>
+                <!-- nav search bar-->
                 <div class="searchbar">
                     <form action="/search" method="post">
                         <input type="text" name="query" placeholder="Search here..." id="searchInput" />
@@ -88,6 +90,7 @@
                         <input type="hidden" name="query" value="{{ query or '' }}">
                 
                         {% for column, values in filter_options.items() %}
+                        <!-- all filters with checkboxes-->
                             {% if column in allowed_columns %}
                             <div class="filterGroup" data-filter-id="{{ column }}">
                                 <h4 onclick="toggleCollapse('{{ column }}')">
@@ -105,7 +108,7 @@
                             </div>
                             {% endif %}
                         {% endfor %}
-                
+                        <!--price range filter-->
                         <div class="filterGroup" data-filter-id="priceRange">
                             <h4 onclick="toggleCollapse('priceRange')">
                                 Price Range <span id="priceRangeArrow">&#9660;</span>
@@ -126,7 +129,9 @@
                 <div class="resultsBox">
                     <h2>Search Results</h2>
                     <ul class="resultsList">
+                        <!--repeat to get all results-->
                         {% for result in results %}
+                        <!--products details from within database-->
                         <li class="resultItem" onclick="window.location.href='{{ url_for('product', product_id=result['id']) }}';">
                             <img src="{{ url_for('static', filename='images/' + result['picture']) }}" alt="Product Image">
                             <div class="resultDetails">
