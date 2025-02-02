@@ -4,17 +4,17 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark background for the page */
-    color: #E0E0E0; /* Light text color */
+    background-color: #121212; 
+    color: #E0E0E0;
 }
 
-/*sub-sections*/
+/*Sub-sections*/
 .container{
     margin-left: auto;
     margin-right: auto;
 }
 
-/*header*/
+/*Header*/
 
 header {
     background-color: #1C1C1C;
@@ -33,18 +33,18 @@ header h1 a {
 }
 
 header h1 a:hover {
-    color: #007AFF; /* Light blue on hover */
+    color: #007AFF; 
 }
 
-/*nav*/
+/*Nav*/
 nav {
-    background-color: #1C1C1C; /* Dark navbar background */
+    background-color: #1C1C1C;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for navbar */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
@@ -55,13 +55,15 @@ nav {
     padding: 0 20px;
 }
 
+/*The box around each nav part*/
 .navBox {
     display: flex;
     align-items: center;
     padding: 10px;
-    flex-grow: 1; /* Make the nav box take up remaining space */
+    flex-grow: 1;
 }
 
+/*Links inside of the nav*/
 .navBox a {
     color: #E0E0E0;
     text-decoration: none;
@@ -69,14 +71,14 @@ nav {
     font-weight: bold;
     margin: 0 15px;
     padding: 10px 15px;
-    border-radius: 4px; /* Rounded corners for links */
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 .navBox a:hover {
-    background-color: #007AFF; /* Light blue background on hover */
-    color: white; /* Change text color to white on hover */
-    border-radius: 5px; /* Slightly larger rounded corners */
+    background-color: #007AFF;
+    color: white;
+    border-radius: 5px;
 }
 
 .navBox a.active {
@@ -86,10 +88,10 @@ nav {
 
 /* Button in the navbar */
 .navBox button {
-    background-color: #007AFF; /* Light blue background */
-    color: white; /* White text color */
-    border: 2px solid #007AFF; /* Border same as background */
-    padding: 12px 20px; /* Adjusted padding to match the size of links */
+    background-color: #007AFF;
+    color: white; 
+    border: 2px solid #007AFF; 
+    padding: 12px 20px; 
     font-size: 16px;
     font-weight: bold;
     border-radius: 4px;
@@ -99,23 +101,23 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 40px; /* Consistent height with navbar links */
+    height: 40px;
 }
 
 .navBox button:hover {
-    background-color: #005BB5; /* Darker shade of blue on hover */
-    border: 2px solid #005BB5; /* Darker border on hover */
+    background-color: #005BB5;
+    border: 2px solid #005BB5; 
 }
 
-/*main*/
+/*Main*/
 
 main{
-    background-color: #121212; /* Dark background for main area */  
+    background-color: #121212;
     text-align: center;
     padding: 10px 0;
 }
 
-/*passage on home page*/
+/*Passage on home page*/
 .mainName{
     color: #E0E0E0;
     padding-top: 20px;
@@ -128,10 +130,10 @@ main{
 .searchbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Make sure input and button are spaced */
-    background-color: #2D2D2D; /* Dark search bar background */
+    justify-content: space-between; 
+    background-color: #2D2D2D; 
     border-radius: 5px;
-    padding: 4px 10px; /* Reduced vertical padding to bring the bar closer */
+    padding: 4px 10px;
     margin: 0 15px;
     border: 1px solid #007AFF;
     transition: border-color 0.3s ease;
@@ -146,9 +148,9 @@ main{
     border: none;
     color: #fff;
     font-size: 14px;
-    padding: 4px 6px; /* Reduced padding to make input field vertically smaller */
+    padding: 4px 6px; 
     border-radius: 4px;
-    width: 625px; /* Maintain wider input */
+    width: 625px;
 }
 
 .searchbar input:focus {
@@ -159,7 +161,7 @@ main{
 .searchbar button {
     background-color: #007AFF;
     color: white;
-    padding: 4px 10px; /* Adjusted padding to make button vertically smaller */
+    padding: 4px 10px;
     border: none;
     border-radius: 4px;
     margin-left: 10px;
@@ -171,7 +173,7 @@ main{
     background-color: #005BB5;
 }
 
-/*main words in front of page*/
+/*Main words in front of page*/
 .entryHeader{
     color: #E0E0E0;
     font-size: 30px;
@@ -186,7 +188,7 @@ main{
     font-size: 15px;
 }
 
-/*section*/
+/*Section*/
 
 section{
     color: #E0E0E0;
@@ -196,7 +198,7 @@ section{
     text-align: center;
 }
 
-/*sponsered products box desgin*/
+/*Sponsered products box desgin*/
 .sponseredProductsBox{
     margin-top: 10px;
     text-align: center;
@@ -219,28 +221,28 @@ section{
 .sponseredProductsContents li {
     align-items: center;
     margin-bottom: 20px;
-    padding: 10px; /* Consistent padding */
-    border-radius: 5px; /* Rounded corners for list items */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 10px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
 }
 
 .sponseredProductsContents li p {
     margin: 5px 0;
-    color: #E0E0E0; /* Light text for result details */
+    color: #E0E0E0; 
 }
 
 .sponseredProductsContents li strong {
-    color: #007AFF; /* Light blue for strong text */
+    color: #007AFF;
 }
 
 
 .sponseredProductsContents li:hover{
-    background-color: #3A4A5A; /* Slightly lighter background on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+    background-color: #3A4A5A;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*recommendation area and button desgin*/
+/*Recommendation area and button desgin*/
 .recommendationTitle{
     padding-top: 60px;
     font-size: 15px;
@@ -251,10 +253,10 @@ section{
 }
 
 .recommendationButton button {
-    background-color: #007AFF; /* Light blue background */
-    color: white; /* White text color */
-    border: 2px solid #007AFF; /* Border same as background */
-    padding: 12px 20px; /* Adjusted padding to match the size of links */
+    background-color: #007AFF; 
+    color: white; 
+    border: 2px solid #007AFF;
+    padding: 12px 20px; 
     font-size: 16px;
     font-weight: bold;
     border-radius: 4px;
@@ -268,15 +270,15 @@ section{
 }
 
 .recommendationButton button:hover {
-    background-color: #005BB5; /* Darker shade of blue on hover */
-    border: 2px solid #005BB5; /* Darker border on hover */
+    background-color: #005BB5; 
+    border: 2px solid #005BB5; 
 }
 
 /* Footer */
 
-/*whole footer*/
+/*Whole footer*/
 footer {
-    background-color: #1C1C1C; /* Dark background for footer */
+    background-color: #1C1C1C;
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -290,14 +292,14 @@ footer .footerContainer {
     margin: 0 auto;
 }
 
-/*the columns inside of the footer*/
+/*The columns inside of the footer*/
 footer .footerColumn {
     width: 22%;
     margin-bottom: 20px;
 }
 
 footer .footerColumn h3 {
-    color: #fff; /* White color for footer column headers */
+    color: #fff;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -312,7 +314,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #007AFF; /* Light blue for links */
+    color: #007AFF; 
     text-decoration: none;
 }
 
@@ -321,7 +323,7 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/*copyright and company name*/
+/*Copyright and company name*/
 footer .footerBottom {
     text-align: center;
     font-size: 14px;
